@@ -15,7 +15,7 @@ class Transaction {
     this.notes,
   });
 
-  // Convert Transaction to JSON
+  // туда JSON
   Map<String, dynamic> toJson() {
     return {
       'id': id,
@@ -27,7 +27,6 @@ class Transaction {
     };
   }
 
-  // Create Transaction from JSON
   factory Transaction.fromJson(Map<String, dynamic> json) {
     return Transaction(
       id: json['id'],

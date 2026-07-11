@@ -6,7 +6,7 @@ import '../models/transaction.dart';
 class StorageService {
   static const String _transactionsKey = 'transactions';
 
-  // Save transactions to SharedPreferences
+  // сохраняет в  SharedPreferences
   Future<void> saveTransactions(List<Transaction> transactions) async {
     try {
       final prefs = await SharedPreferences.getInstance();
@@ -15,13 +15,11 @@ class StorageService {
       await prefs.setStringList(_transactionsKey, jsonList);
     } catch (e) {
       if (kDebugMode) {
-        print('Error saving transactions: $e');
+        print('404: $e');
       }
-      // Fallback to in-memory only in case of error
     }
   }
 
-  // Load transactions from SharedPreferences
   Future<List<Transaction>> loadTransactions() async {
     try {
       final prefs = await SharedPreferences.getInstance();
@@ -37,9 +35,9 @@ class StorageService {
       }).toList();
     } catch (e) {
       if (kDebugMode) {
-        print('Error loading transactions: $e');
+        print('404: $e');
       }
-      // Return empty list in case of error
+
       return [];
     }
   }

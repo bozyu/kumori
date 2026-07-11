@@ -1,16 +1,20 @@
-# kumori
 
-A new Flutter project.
+# kumori - финансовый менеджер
 
-## Getting Started
+## О проекте
 
-This project is a starting point for a Flutter application.
+**kumori** — приложение для управления личными финансами, созданное на Flutter. Приложение поможет вам отслеживать доходы и расходы,контролировать бюджет с помощью минималистичного и интуитивно понятного интерфейса.
 
-A few resources to get you started if this is your first Flutter project:
+### Основные возможности
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+-  **Учет транзакций** - Добавление, редактирование и удаление доходов и расходов
+-  **Карточка бюджета** - Отображение общего баланса, доходов и расходов
+-  **Группировка по датам** - Умная организация транзакций по периодам:
+  - Сегодня
+  - Вчера  
+  - На этой неделе
+  - В этом месяце
+  - По месяцам и годам
+-  **Поиск** - Быстрый поиск транзакций по названию или сумме
+-  **Адаптивный дизайн** - Красивый темный интерфейс с Material Design 3
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
